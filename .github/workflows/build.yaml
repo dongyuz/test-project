@@ -19,3 +19,6 @@ jobs:
       - name: Setup VSTest and add to PATH
         uses: darenm/Setup-VSTest@v1
         id: setup_vstest
+      - name: Generate Report
+        id: generate_test_report
+        run: vstest.console.exe Debug\UnitTest.dll
