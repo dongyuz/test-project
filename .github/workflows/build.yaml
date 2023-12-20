@@ -21,4 +21,4 @@ jobs:
         id: setup_vstest
       - name: Generate Report
         id: generate_test_report
-        run: vstest.console.exe Debug\UnitTest.dll
+        run: vstest.console.exe cproject\Debug\UnitTest.dll
